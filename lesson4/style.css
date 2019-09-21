@@ -1,0 +1,68 @@
+.clearfeix{
+
+}
+html{
+    font-size: 20px;
+}
+body{
+    padding-bottom: 500px;
+}
+.box{
+    height: 100vh;
+    width: 80vw;
+
+    background-color: darkcyan;
+    background: color: fuchsia url('faceb.png') no-repeat top center center,
+    url('gog.png') no-repeat top center;
+
+    /*
+    baground-position: 100px 100px;
+    baground-position: center center; (x y)
+    left right bottom tom
+    */
+    background-size: cover;
+    /*
+    contain-заполнит блок изображения, упираясь максимально широкой стороной
+    cover-заполняет блок так, чтобы максимально покрыть его фон. используется...
+    */
+    background: url(faceb.png) no-repeat top center,
+    url('gog.png') no-repeat top center;
+}
+.title{
+    font-size: 40; co
+    font-weight: 300;
+    /* жирность шрифта бывает от 100 до 900
+    bold=600
+    light=300
+    */
+    color: #6c6c6c;
+    color: rgb(red, green, blue);
+    color: rgba(0,0,0,.5); 
+    /* прозрачность 50% */
+    color: hsl(180, 64%, 33%);
+    color: hsla(180, 64%, 33%, .5);
+
+}
+.parenr{
+    font-size: 40px;
+    margin-top: 15px;
+}
+.children{
+    font-size: .5em; 
+}
+.children-children{
+    font-size: 2rem!important;
+    margin-bottom: 2em;
+    margin-top: inherit;
+}
+.image-round{
+    width: 200px;
+    border-radius: 60%; 
+    border-radius: initial;
+}
+/* Глобальное значение для cвойств
+ initial-сбрасывает на значение по умолчанию */
+
+div.image-round{
+    width: 100px;
+}
