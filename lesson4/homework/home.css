@@ -1,0 +1,35 @@
+.clearfix{
+    clear: both;
+}
+.menutop{
+    height: 20px;
+    width: 660px;
+    padding: 20px;
+}
+.menu{padding-top: 60px;}
+
+.box{
+    text-align: center;
+    height: 40px;
+    width: 658px;
+    padding-top:  40px;
+    color: black;
+    background: aquamarine;
+    border-radius: 3px;
+    border: 1px solid black;
+    
+}
+
+.box1{
+    text-align: center;
+    height: 20px;
+    width: 70px;
+    padding: 30px;
+    background-color: aqua;
+    border-radius: 3px;
+    border: 1px solid black;
+    
+} 
+
+
+

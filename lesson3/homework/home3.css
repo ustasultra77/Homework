@@ -1,0 +1,51 @@
+.clearfix{
+    clear: both;
+}
+.calendar{
+    height: 350px;
+    width: 364px;
+    padding: 0px;
+}
+.month{
+    text-align: center;
+    height:  30px;
+    width: 350px;
+    padding: 7px;
+    background: aqua
+}
+
+.weeks{
+    text-align: center;
+    height: 25px;
+    width: 46px;
+    padding: 1px;
+    margin: 2px;
+    background-color: gray;
+}
+.weekend{
+    text-align: center; color: brown
+}
+
+.days{
+    text-align: center;
+    height: 25px;
+    width: 46px;
+    padding: 1px;
+    margin: 2px;
+    background-color: gray;
+}
+
+.daysother{
+    text-align: center; color: white;
+    
+}
+.daysred{
+    text-align: center; color: brown;
+    }
+.dayscurrent{
+    background-position: palevioletred
+}
+    
+    
+
+

@@ -1,0 +1,22 @@
+.box{
+    text-align: center;
+    width: 40%;
+    height: 8%;
+    margin: 1%;
+    padding: 20px;
+    background-color: azure;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+    
+
+.box1{
+    text-align: center;
+    width: 40%;
+    height: 8%;
+    margin: 1%;
+    padding: 20px;
+    background-color: gray;
+    border-radius: 5px;
+    border: 1px solid black;  
+}
