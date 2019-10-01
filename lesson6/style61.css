@@ -1,0 +1,107 @@
+.text{
+    word-spacing: 10px;
+    /* принимает положительное или отрицательное значение расстояния между словами 
+    принимает  - px/em/%
+    */
+    letter-spacing: 3px;
+    /* меняет расстояние между буквами
+    принимает px/em
+    */
+    text-indent: 20px;
+    /* отступ первой строки
+    принимает px/ em / % от длины ширины блока-родителя/ добавочные значения: 
+    each-line добавить пробкл при ккаждом переносе
+    hanging - все строки будут с пробелом, кроме первой
+    */
+
+    /* свойства шрифтов */
+
+    font-family: "Calibri", 'Arial', Helvetica, sans-serif;
+
+    /* Семейства шрифтов: serif/ sans-serif/ monospase /cursive
+    */
+
+    font-weight: 700;
+    /* 100-900 */
+    font-style: italic;
+    /* курсив */
+
+    font-size: 20px;
+    /* smaller/ larger -  размер шрифта меняется на +\ - 1 поинт   */
+    line-height: 1.5; 
+    line-height: 40 px;
+    /* высота строки */
+
+    font: italic 30px/34px 'Arial', serif;
+}
+
+a:link{ /* обычное состояние ссылки*/
+    color: yellow;
+    text-decoration: none; /* отключает подчеркивание*/
+}
+
+
+a:visited{ /* посещенная ссылка*/
+    color: tomato;
+}
+
+a:hover{ /* при наведении*/
+    color: aqua;
+}
+a:active{ /* при нажатии */ 
+    color: hotpink;
+}
+
+.gradient{
+    width: 500px;
+    height: 300px;
+}
+
+
+.gradient-l{
+    width: 500px;
+    height: 300px;
+    background: linear-gradient(45deg, red, blue, purple);
+
+/* to left top - из нижнего правого в левый верхний
+ to right - с лева на право
+*/
+    background: linear-gradient(45deg, red 20%, blue 50%, purple 20%);
+ 
+} 
+
+.gradient-l2{
+    background: linear-gradient(45deg, red 20%, blue 20%, blue 80%, purple 80%);
+ 
+}
+
+.gradient-l3{
+    background: radial-gradient(at 100px 100px, white, red);
+    /* at top - сместить центральную точку вверх
+    at 100px 100px - задать координату центральной точки
+    */
+    background: radial-gradient(40% 50%, white, red);
+
+    /* 40% - ширина эллипса
+        50% - высота эллипса
+        closest-side - градиент стремится к самой ближней точкке блока    
+        farthest-side - расстояние до дальних сторон
+        closest-corner - стремится к ближайшему углу
+        farthest-corner - стремится к дальнему углу
+
+        можно также поменять с эллипса на круг добавив параметр  sirkl
+
+        
+    */
+    background: radial-gradient(closest-side at 100px 50px, white, red);
+    background: radial-gradient(farthest-side at 100px 50px, white, red);
+
+}
+
+/* повтор градиента*/
+.gradient-l4{
+    background:
+    repeating-linear-gradient(45deg, red, red 10px, blue 10px, blue 20px) url(faceb.png);
+
+    background: repeating-linear-gradient(circle, red, red 10px, blue 10px, blue 20px)
+}

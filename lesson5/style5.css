@@ -1,0 +1,83 @@
+/*Позиционирование*/
+
+.box{
+    width: 500px;
+    height: 1500px;
+    background: gray;
+    position: relative;
+}
+.square, .square2 {
+    width: 15px;
+    height: 15px;
+    background: red;
+    position: relative;
+    top: 20px;
+    left: 40px;
+
+}
+.square{
+    z-index: 2;
+}
+
+/* по умолчанию все єлементі имеют position: static;
+relative - позволяет сместить єтот єлемент относительно своего местоположения
+top/left/bottom - єлемент -работают относительно области видимости первого экрана, либо
+если у родителя задан position: relative то относительно него
+*/
+.square2{
+    background: blue;
+    position: absolute;
+    top: auto;
+    left: auto;
+
+    bottom: 0;
+    left: 0;
+
+}
+/* при absolute элемент теряет свое место*/
+
+.square3{
+    width: 15px;
+    height: 15px;
+    background: purple;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+
+/* при фиксированном позиционировании элемент смещается вместе с экраном области 
+видимости и принимает позицию в его рамках.
+Также он теряет свое место.
+На него не влияет, если у родителя есть position: relative; (либо любой другой кроме static), то относительно него
+
+*/
+
+}     
+
+.square4{
+    width: 15px;
+    height: 15px;
+    background: green;
+
+    position: sticky;
+    top: 0;
+    
+}
+/* при позиции position sticly элемент прилипает к указанной стороне экрана, когда область видимости смещается.
+Он не теряет своего места
+*/
+
+.square5{
+    width: 30px;
+    height: 30px;
+    background: yellow;
+
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    z-index: 1; /* 1-99999*/
+    
+}
+
+
+/* z-index будет работать со всеми свойствами posion кроме static*/

@@ -1,0 +1,136 @@
+.box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.planet{
+    width: 55%;
+    height: 45%;
+    position: absolute;
+    bottom: 0%;
+    margin-left: 0%;
+    margin-bottom: 4%; 
+}
+.planetRed{
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+    left: 0px;
+    margin: 0px;
+}
+.planet1{
+    width: 120px;
+    height: 120px;
+    bottom: 2%px;
+    right: 0%;
+}
+.planet2{
+    width: 80px;
+    height: 80px;
+    
+    bottom: 65%;
+    left: 5%;
+
+}
+.planet3{
+    width: 48%;
+    height: 45%;
+    position: absolute;
+    padding: 0px;
+    right: 0px;
+
+}
+.planet4{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 0px;
+    right: 0px; 
+
+}
+.korabel{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 200px;
+    left: 250px;
+    z-index: 15;
+
+}
+.korabel1{
+   
+    position: fixed;
+    top: 170px;
+    left: 200px;
+    z-index: 0;
+
+}
+.korabel2{
+    
+    position: fixed;
+    top: 230px;
+    left: 300px;
+    z-index: 20;
+}
+
+.astronavt{
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    top: 0em;
+    left: 0em;
+    border-radius: 10px;
+
+}
+.Zeml{
+    width: 90px;
+    height: 90px;
+    top: 3em;
+    left: 3em;
+    z-index: 2;
+}
+.astronavtU{
+    width: 50px;
+    height: 50px;
+    top: 0.8em;
+    left: 4em;
+
+}
+.astronavt1{
+    top: 2em;
+    left: 8em;
+    z-index: 5;
+}
+.astronavt2{   
+    top: 7em;
+    left: 8em;
+    z-index: 5;
+}
+.astronavt3{
+    top: 5.000005em;
+    left: 10.00003em;
+}
+.nlo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.gradient{
+    background: radial-gradient(circle at 20% 50%, white, black);
+    position: fixed;
+    bottom: 5%;
+    right: 10%;
+
+}
+.nlo1{
+    position: fixed;
+    bottom: 8%;
+    right: 15%;
+    z-index: 3;
+}
+.nlo2{
+    position: fixed;
+    bottom: 11%;
+    right: 20%;
+    z-index: 3;
+}
