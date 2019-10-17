@@ -1,0 +1,114 @@
+.products{
+    border-collapse: collapse;
+    /* отключает расстояние между ячейками*/
+    /*border-spacing: 10px; -расстояние между ячейками*/
+    width: 600px;
+}
+
+.products caption{
+    caption-side: bottom;
+}
+
+.products tbody tr:nth-child(1) td:nth-child(1){
+    border-right: 0;
+}
+.products tbody tr:nth-child(1) td:nth-child(2){
+    border-left: 0; 
+}
+
+.products td{
+    padding: 15px;
+}
+
+/* рамки */
+.border{
+    width: 400px;
+    height: 300px;
+    background: purple;
+
+    border: 4px solid red;
+
+    border-width: 10px; /*толщина рамки*/
+    border-style: dotted; /*стиль рамки */
+    border-color: blue;
+    /*
+    border: 4px solid red;
+    border: 4px solid red;
+    border: 4px solid red;
+    border: 4px solid red;
+     
+Можно задать свой стиль для каждой стороны рамки, начиная с верхней и по часовой стрелке
+
+    border-width: 4px 5px 6px 7px;
+    border-style: solid solid dotted dashed;
+    border-color: red blue green black; 
+    */
+    border-radius: 10px 20px 30px 40px;
+    /* принимает px / %  от длины стороны, начиная с левого верхнего и по часовой стрелке*/
+    border-radius: 50% 40% 50% 50%;
+
+    border-top-left-radius: 30px/60px;
+    /*
+    border-top-right-radius
+    border-bottom-left-radius
+    border-bottom-right-radius
+    */
+    border-radius: 30px/60px;
+    
+
+    /*тень для блока*/
+
+    -webkit-box-shadow: 24px 7px 9px 0px rgba(92, 99, 156, 0.64);
+    -moz-box-shadow:    24px 7px 9px 0px rgba(92, 99, 156, 0.64);
+    box-shadow:         24px 7px 9px 0px rgba(92, 99, 156, 0.64);
+
+    /*
+    смещение_по_ширине смещение_по_высоте радиус_размытия растяжение цвет
+     box-shadow:  inset 24px 7px 9px 0px rgba(92, 99, 156, 0.64);
+     inset включает внутреннюю тень
+
+     Можно задавать через запятую сразу две тени, но одна изних должна быть inset
+     box-shadow:  inset 24px 7px 9px 0px rgba(92, 99, 156, 0.64),
+      24px 7px 9px 0px rgba(92, 99, 156, 0.64);
+    */
+    text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+    /*смещение_по_ширине смещение_по _высоте радиус размытия цвет */
+
+}
+
+.size{
+    background: red;
+    height: 200px;
+    min-width: 400px; /* блок не может быть меньше 400рх*/
+    max-width: 700px; /*блок не может быть больше 700рх*/
+    min-height: 300px; /* не может быть меньше 300рх */
+    max-height: 700px; /* не может быть больше 700рх*/
+}
+    /* псевдоэлементы*/
+
+.size::first-letter{
+    font-size: 40px;
+    /* применим только к блочным элементам*/
+}
+.size::first-line{
+    text-decoration: underline;
+    /* применим только к блочным элементам*/
+
+  /*  .size:huver::first-line{
+        text-decoration: underline;
+     применим только к блочным элементам*/
+}
+
+.size::before{
+    content: 'Privet'; /*обязательное свойство!!! нужно хотя бы объявить пустым
+    
+    в контент можно вставить текст или кртинку через url()*/
+}
+
+.size::after{
+    content: "Poka";
+    /* befor добавляет элемент в начале контента внутри блока, а  after - в конец
+    color: transparent; - прозрачный цвет
+    */
+}
+

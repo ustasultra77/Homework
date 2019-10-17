@@ -1,0 +1,72 @@
+.general1{
+    width: 990px;
+    border: lpx solid black;
+    padding: 15px 3px 3px 3px;
+}
+.general{
+    border: 3px solid black;
+    width: 980px;
+    border-collapse: collapse;
+    text-align: start top;
+    
+}
+.caption{
+    caption-side: top;
+    padding: 5px 0;
+}
+.general td{
+    border-left: 1px solid black;
+}
+
+.general tbody tr:nth-child(1) td:nth-child(1){
+    border: 3px solid black; 
+}
+.general tbody tr:nth-child(1) td:nth-child(3){
+    border-bottom: 3px solid black;
+    text-align: end bottom;
+   
+}
+.general tbody tr:nth-child(2){
+    border-bottom: 3px solid black;
+    border-top: 1px solid black;
+    text-align: center;
+}
+.general tbody tr:nth-child(3) td:nth-child(2){
+    border-bottom: 1px solid black;
+    border-left: 0;
+}
+.general tbody tr:nth-child(4) td:nth-child(1){
+    border-right: 3px solid black;
+    border-left: 0;
+    border-bottom: 1px solid black;
+}
+.general tbody tr:nth-child(3) td:nth-child(3){
+    border-left: 0;
+    border-right: 3px solid black;
+}
+.general tbody tr:nth-child(5) td:nth-child(1){
+    border-left: 0;
+}
+
+.general tbody tr:nth-child(6) td:nth-child(1){
+    border-left: 0;
+    border-right: 3px solid black;
+}
+
+.general tbody tr:nth-child(5) td:nth-child(2){
+    border-left: 0;
+    border-right: 3px solid black;
+}
+
+
+.general tfoot tr:nth-child(1){
+    border-top: 3px solid black;
+}
+.general tfoot tr:nth-child(1) td:nth-child(2){
+    border-right: 3px solid black;
+    border-left: 0;
+}
+.general tfoot tr:nth-child(2) td:nth-child(1){
+    border-right: 3px solid black;
+    border-left: 0;
+}
