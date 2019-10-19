@@ -1,11 +1,10 @@
 .general1{
-    width: 990px;
-    border: lpx solid black;
+    display: inline block;
     padding: 15px 3px 3px 3px;
 }
 .general{
     border: 3px solid black;
-    width: 980px;
+    
     border-collapse: collapse;
     text-align: start top;
     

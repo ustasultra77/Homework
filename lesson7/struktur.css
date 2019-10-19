@@ -1,0 +1,32 @@
+.wrapper{
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: blueviolet;
+    
+}
+.fon2{
+    
+   
+    margin: 0;
+   
+    
+    
+    
+}
+.header-menu{
+    width: 335px;
+    height: 30px;
+    line-height: 15px;
+    float: left;
+    background: coral;
+    border: solid;
+    text-align: center;
+    margin: 0;
+}
+.main{
+    widows: 664px;
+    background: crimson;
+}
+.footer{
+    background: blueviolet;
+}
