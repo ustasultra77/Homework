@@ -1,0 +1,134 @@
+@font-face{
+    font-family: 'kaushanscript-regular-demo';
+    src: url('kaushanscript-regular-webfont.eot');
+    src: url('kaushanscript-regular-webfont.woff');
+    src: url('kaushanscript-regular-webfont.woff2');
+    
+}  
+.wrapper{
+    max-width: 1024px;
+    margin: 0 auto;       
+}
+
+ img{
+    display: block;
+    max-width: 100%;
+}
+ #header{
+    padding: 0px;
+}
+body{
+    font-family: 'kaushanscript-regular-demo', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #44464f;
+}
+.clear{
+    clear: both;
+}
+.fon{
+    height: 194px;
+    background: url(space.png);
+    box-sizing: border-box;
+}
+
+.h2{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+    padding-top: 20px;
+    margin: 0;
+}
+.header-bottom,
+.main-menu,
+.main-menu-box{
+    float: left;
+}
+.header-menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+}
+.header-menu ul li{
+    float: left;
+}
+.header-menu ul li a{
+    display: inline-block;
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+    width: 341px;
+    height: 50px;
+    line-height: 15px;
+    padding: 10px 0;
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+.main-menu{
+    width: 364px;
+    background: papayawhip;
+}
+.main-menu-h{
+    display: block;
+    line-height: 20px;
+    text-align: center;
+    padding: 20px 0 10px 0;
+    margin-right: 20px;
+}
+
+.main-menu-smole ul{
+    margin-left: 0px;
+}
+.main-menu-smole ul li a{
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    border: 2px solid;
+    line-height: 20px;
+    margin: 10px;
+    padding: 0px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 5px 0;
+    
+}  
+.main-menu-box{
+    width: 660px;
+    background: paleturquoise;
+}   
+.main-menu-image{
+    background: url(images.png) no-repeat center;
+    width: 660px;
+    height: 146px;
+    display: inline-block;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.h3{
+    font-weight: bolder;
+}
+.main-menu-info{
+    float: left;
+}
+
+ #footer{
+    padding: 10px;
+}
+.footer-contacts-h,
+.footer-contacts-address,
+.footer-contacts-mail,
+.footer-contacts-phone{
+    float: left;
+    width: 252px;
+    height: 30px;
+    border: 2px solid;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    margin: 0;
+    border-radius: 3px;
+    display: inline-block;
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+    font-weight: 500;
+}
