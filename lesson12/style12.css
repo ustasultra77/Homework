@@ -1,0 +1,12 @@
+.gradient-line{
+    width: 20px;
+    height: 20px;
+    background: linear-gradient( to bottom, black 12%, black 12%, white 26%, white 26%,black 40%,black 40%, white 54%, white 54%,black 68%, black 68%, white 82%, white 82%, black 100%);
+}
+.header-search-container{
+    width: 28px;
+    height: 28px;
+    background: repeating-radial-gradient(circle, black 15%, white 30%, black 35%, black);
+    background: linear-gradient(-45deg, black 45%, black 45%,white 55%, white 55%, black 100%);
+}
+
