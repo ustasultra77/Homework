@@ -1,0 +1,167 @@
+.box{
+    width: 300px;
+    height: 100px;
+    background: red;
+}
+/* Переходы (transition) */
+.box-hover{
+transition-property: width;
+transition-duration: 3s;
+transition-timing-function: cubic-bezier(0,1.13,.93,1.11);
+transition-delay: 2s;
+}
+
+/*
+ trantision-property принимает название свойства на которое влияет переход
+ По умолчанию all (все свойства)
+ none - отключает все свойства
+
+ transition-duration время выполнения перехода задается в s/ms
+
+ transition-timing-function: принимает функцию, отвечающую за параметры ускорения перехода
+ По умолчанию имеет параметры  - ease
+ можно передать любую функцию cubic-bezier.com
+ transition-delay задержка перед переходом
+
+ краткая запись перехода -
+ transition: property duration timing-function delay;
+ transition: background 1s ease, color 4s leaner; 
+ transition-property: background
+*/
+
+/* Трансформации (transform) 
+*/
+.box2{
+    width: 200px;
+    height: 200px;
+    background: blue;
+}
+.box2:hover{
+    /* сдвиг элемента */
+    transform: translate(50px, 60px);
+    /* translateX() - для сдвига по оси Х
+        translateY() - для сдвига по оси Y
+        отрицательные значения принимаются также
+    */
+    /* Искажение*/
+    transform: skew(20deg, 20deg);
+    /* Искажает оси объекта
+    skewX()
+    skewY()
+    */
+}
+.box3{
+    width: 300px;
+    height: 100px;
+    background: purple;
+}
+.box3:hover{
+   /* Масштабирование*/
+   transform: scale(-1, -1);
+   /*
+    Принимает значение от 0 до 1 - уменьшение относительно 100%
+    Больше 1 - увеличение
+    Отрицательное значение - объект зеркально перевернется
+
+    scaleХ(1)
+    scaleY(1)
+   */
+}
+.box4{
+    width: 100px;
+    height: 100px;
+    background: green;
+    transition: transform 2s;
+
+    transform-origin: 70% 30%;
+    /* Меняет координаты оси , приниает пиксели, %, top/left/bottom/right 
+    можно применить отрицательные значения*/
+}
+.box4:hover{
+    /* Поворот*/
+    transform: rotate(360deg);
+    /* Принимает градусы поворота  -deg */
+}
+
+.box5{
+    font-size: 60px;
+    font-weight: bold;
+    animation: shadow 2s infinite ease-in-out;
+    animation-direction: alternate;
+    position: absolute;
+}
+@keyframes shadow{
+    0% {
+        text-shadow: 0 0 3px black;
+        left: 0;
+    }
+    50% { text-shadow: 0 0 30px black;
+        left: 300px;
+        transform: rotate(360deg);}
+
+    100% {text-shadow: 0 0 3px black;
+        left: 0;}
+
+}
+.box5:hover{
+    animation-delay: 2s;
+}
+
+/*
+ Задокументированные названия данные начала и конца  анимации-действия
+ from
+ to
+
+ animation-name: произвольное имя
+ 
+  none отключает анимацию
+
+ animation-duration 
+  время выполнения в s/ms
+
+  animationtiming-function - принимает функцию cubic-bezier()
+
+  animation-iteration-finction - количество итераций-повторений
+  если задать infinite будет бесконечность
+    animation-direction - задает направление
+    normal - по умолчанию
+    reverse -все повторы воспроизводятся в обратном направлении
+    alternate - каждый неченый повтор воспроизводится в нормальном направлении, а каждый четный - в обратном - 
+    altternate-reverce
+    animation-play-state - 
+    paused - щстановка анимации
+    animation-delay - задержка анимации перед началом в s / ms
+
+    Краткая заптсь анимации:
+    animation: name duration timing-functuio delay iteration-count direction;
+
+    Множественная анимация
+
+  */
+
+@keyframes trash{ /* animation: trash 8s infinite ease-in-out;
+    3s 400px вправо 2s задержкаопускается 200зч вниз и крутится 360 2с и увеличивается в 2раза */
+    0%{
+        left: 0;
+    }
+
+    37.5%{
+        left: 400px;
+    }
+    62.5%{
+        top: 200px;
+        
+    }
+    87.5%{
+        top: 200px;
+        transform: rotate(360deg);
+
+    }
+
+    100%{
+        left: 200px;
+        top: 200px;
+        transform: scale(2,2);
+    }
+
+}

@@ -1,0 +1,10 @@
+.label{
+    display: inline-table;
+    width: 100px;
+  
+}
+.input{
+    display: inline-block;
+    margin-left: 200px;
+    width: 200px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>forma</title>
+    <link rel="stylesheet" href="stylef.css">
+</head>
+<body>
+    <form method="POST" action="mailto:http://nickblack.pro/send.php" enctype="text/plain">
+        <fieldset>
+            <legend>Form task</legend>
+            <p>
+            <label  for="fname">Имя</label>
+            <input type="text" value="Elena">
+            </p>
+            <label  for="sname">Фамилия</label>
+            <input type="text" value="Vashchenko">
+            <p>
+            <label for="age">Возраст</label>
+            <input type="number" min="1" max="100" step="1">
+            </p>
+            <label for="mail">Почта</label>
+            <input type="email" id="mail">   
+            <p>
+            <label for="bday">Дата рождения</label>
+            <input type="date" min="2008-01-01">    
+            </p>
+            <label for="phone">Tel:</label>
+            <input type="tel" value="+380950000000">
+            <p>
+            <label for="mymail">E-mail</label>
+            <input type="email" value="77alexultra@gmail.com" readonly>     
+            </p>
+
+ 
+        </fieldset>
+        <p><input type="submit" value="отправить"></p>
+    </form>
+</body>    
+</html>
