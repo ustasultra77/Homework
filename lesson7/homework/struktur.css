@@ -65,6 +65,7 @@
     text-align: center;
     padding: 20px 0 10px 0;
     margin-right: 20px;
+    
 }
 
 .main-menu-smole ul{
@@ -84,36 +85,38 @@
     
 }  
 .main-menu-box{
-    width: 660px;
+    width: calc(100% - 364px);
     background: paleturquoise;
 }   
 .main-menu-image{
-    background: url(images.png);
-    width: calc(100% - 364px);
-    height: 146px;
+    background: url(img/images.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
     display: inline-block;
     border-radius: 5px;
     text-align: center;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     box-sizing: border-box;
 }
+.text{
+    text-align: justify;
+}
 .main-menu-info{
     float: left;
 }
 
- #footer{
-    padding: 10px;
-}
 .footer-contacts-h,
 .footer-contacts-address,
 .footer-contacts-mail,
 .footer-contacts-phone{
     float: left;
-    max-width: 252px;
+    min-width: 252px;
     height: 30px;
     border: 2px solid gray;
     text-align: center;
-    padding: 5px 58.351px 5px 58.2343px;
+    
     margin: 0;
     border-radius: 3px;
     display: inline-block;

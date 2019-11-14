@@ -3,6 +3,8 @@
     height: 800px;
     position: relative;
     background-image: url(Universe.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .planet{
     background-image: url(planetred.png);
