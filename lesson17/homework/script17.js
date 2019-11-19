@@ -3,8 +3,7 @@
 let sec, min, hour;
 hour = 3;
 min = sec = 60;
-hour *= min * sec ;
-console.log(hour);
+console.log(hour* min * sec);
 
 //2
 let num = 1;
@@ -36,4 +35,4 @@ console.log(rezult);
 //5
 let name;
 name = 'Olena';
-console.log ( 'Привет', name);
+console.log ( 'Привет ' + name);

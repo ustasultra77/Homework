@@ -1,7 +1,4 @@
-@font-face{
-    font-family: 'Times New Roman', Roboto;
-    src: url('img/11874.ttf');
-}
+
 .wrapper{
     width: 1260px;
     margin: 0 auto;
@@ -9,9 +6,7 @@
 
 
 }
-.clear{
-    clear: both;
-}
+
 .flex-container{
 	display: flex;
 	-webkit-flex-flow: row wrap;
@@ -87,7 +82,7 @@
 .slider3{
     font-family: 'Times New Roman', 'Lucida Sans Regular';
     font: 48pt;
-    font-display: ;
+   
     max-width: 378px;
     height: 484px;
     background-color: #eb7b61;

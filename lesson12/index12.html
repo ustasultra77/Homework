@@ -5,37 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-
-    <link rel="stylesheet" href="style12.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style121.css">
 </head>
-<body>
+<body class='i-body'>
 <div class="wrapper">
     
-    <header id="header" class="flex-container">  
-            
-            <div class="header-icon-line">
-                <div class="header-line"></div>
-                <div class="header-line"></div>
-                <div class="header-line"></div>  
-            </div>
-            <div class="header-menu">
-                MENU
-            </div>
+    <header id="header" class="header-flex">  
+            <a class="header-menu" href="#">
+                <div class="header-icon-line">
+                    <div class="header-line"></div>
+                    <div class="header-line"></div>
+                    <div class="header-line"></div>  
+                </div>
+               <div class='header-icon-text'>MENU</div> 
+            </a>
             <div class="header-logo">
-                DMT<br>
-                Design Meets Tech
+                <div class="header-logo-title">DMT</div>
+                <div class="header-logo-text">Design Meets Tech</div>
             </div>
-            <div class='header-text'>SEARCH<div>
-            <div class="search-img">
-                <img src="img/4-128.png" alt='search'>
-            </div>
-         
+            <a class='header-search' href="#">SEARCH</a>
     </header>
-    <main id='main' class="flex-container">
+    <main id='main' class="main-flex">
         
             <div class="slider1">
                 <div class="slider-h4" >HOME</div>
-                <h1 class="slider-title">Buster<br>Bulb</h1>
+                <div class="slider-title">Buster<br>Bulb</div>
                     <div class="slider-desc">
                             The first designer<br>LED bulb,finished<br>in gold glass.
                     </div>
@@ -46,7 +41,7 @@
 
             <div class="slider2">
                 <div class="slider-h4">ACCESSORIES</div>
-                <h1 class="slider-title">Peak</h1>
+                <div class="slider-title">Peak</div>
                 <div class="slider-desc">
                     A playful pouch<br>which a trick up its<br>sleeve
                 </div>
@@ -58,16 +53,20 @@
             <div class="slider3">
                     <div class="slider3-title">Good Things</div>
                     <div class="slider3-desc1">
-                        ...<br>comr to those who sign up<br>for our newsletter.
+                        ...<br>come to those who sign up<br>for our newsletter.
                     </div>
                     <div class="slider-buttom"> 
-                            <a href="mailto:example@mail.ru">Your email</a>
+                        <form method="POST" action="mailto:http://nickblack.pro/send.php" enctype="text/plain">
+                            <input type="email" placeholder="Your email" class="email-input"
+                            name="mail">
+                            <p>
+                            <input type="name" placeholder="Subscribe" class="name-input"
+                            name="name">
+                            </p>  
+                        </form>
                     </div>
-                    <div class="slider-buttom" class="slider-buttom1">
-                        Subscribe
-                    </div>
-                    <div class="slider3-desc2"></div>
-                    <p>We respect your privacyand we won't<br>share your information.</p>
+    
+                    <div class="slider3-desc2">We respect your privacyand we won't<br>share your information.</div>
                     </div>
            
 
@@ -100,7 +99,7 @@
     
     </main>
 
-    <footer id="footer">
+    <footer id="footer" class="footer-flex">
         
             <div class="footer-desc">Copyright DMT</div>
             <div class="footer-facebook"></div>
