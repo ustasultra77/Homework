@@ -38,12 +38,14 @@ switch(value){
 
 //4
 
-let a = 5, b = -1;
+let a = 5, b = 5;
 function min(a,b){
     if(a < b){
         return a;
+    }else if(b < a){
+        return b;    
     }else{
-        return b;
+        return false;
     }
 }
 console.log( min(a,b));

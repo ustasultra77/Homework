@@ -1,10 +1,13 @@
-@import url(img/Open_Sans/OpenSans-Bold.ttf);
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:300,400,600,700&display=swap&subset=cyrillic');
 .i-body{
     background: #4d514f;  
 }
 .wrapper{
-    width: 1021px;
+    max-width: 1021px;
     margin: 0 auto;
+
 }
 .header-flex,
 .header-menu,
@@ -20,9 +23,12 @@
     max-width: 100%;
     flex-direction: row;
     justify-content: space-between;
-    height: 204px;
+    height: 200px;
     color:  #898691;
     align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 5px;
+    
 }
 .header-menu{
     color:  #898691;
@@ -30,9 +36,10 @@
     justify-content: space-between;
     width: 78px;
     height: 19px;
+    text-decoration: none;
 }
 .header-icon-line{
-    width: 22px;
+    width: 21px;
     flex-direction: column;
     justify-content: space-between;
     
@@ -42,36 +49,44 @@
     background: #898691;
 }
 .header-icon-text{
-    
-    font-weight: 200;
-   
-    
+    font-weight: 300;   
+    font-size: 12px;
+    line-height: normal;
 }
 .header-logo{
-    width: 150px;
+    /*width: 150px; */
     flex-direction: column;
-    
     text-align: center;
     
 }
 .header-logo-title{
-    font-size: 48pt;
+    font-size: 46px;
+    line-height: 46px;
+    color: #ffffff;
+    font-weight: 800;
+    
 }
 .header-logo-text{
-    font-size: 13pt;
+    font-size: 12px;
+    line-height: 16px;
 }
 .header-search{
     width: 93px;
     height: 23px;
     background: url(img/search.png) no-repeat right;
     color:  #898691;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 12px;
+    align-items: center;
     
-    font-weight: 200;
+    
 }
 .main-flex{
     display: flex;
     flex-wrap: wrap;
     align-content: stretch;
+    font-family: "Open Sans", sans-serif;
 }
 .slider1,
 .slider2,
@@ -81,27 +96,51 @@
 .slider6{
     display: flex;
     flex-direction: column;
+    color: #ffffff;
+    justify-content: space-between;
+
 }
 .slider1{
-    background: url(img/lamps.png) no-repeat center center;
+    background: url(img/loamp.png) no-repeat center center;
+    align-content: space-between;
     width: 100%;
-    height: 514px;
-    margin-bottom: 0.5em;
+    height: 513px;
+    margin-bottom: 0.7em;
 }
 .slider-h4{
-    font-size: 16px;
+    font-size: 14px;
     color: #ffc7b0;
-    font-family: sans-serif;
-    padding:  40px 0 0 40px;
+    margin-left: 40px;
+    margin-top: 35px;
+
 }
 .slider-title{
-    line-height: 60px;
-    font-size: 55px;
-    font-weight: 400;
-    height: 90px;
-    padding-left: 40px;
-    color: #ffffff;
+    line-height: 72px;
+    font-size: 65px;
+    font-weight: 800;
+    margin-left: 40px;
+    letter-spacing: 0.1em;
+   
 }
+.slider-desc{
+    font-size: 35px;
+    line-height: 42px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 40px;
+}
+
+.slider-submit{
+    width: 121px;
+    height: 38px;
+    color: #ffffff; 
+    border: 3px solid #ffe18f;
+    text-decoration: none;
+    text-align: center;
+    line-height: 34px;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-bottom: 40px;
 }
 .slider2{
     flex-basis: 60%;
@@ -110,93 +149,262 @@
     height: 484px;
     margin: 0.5em 0.5em 0.5em 0;
 }
+.slider-title2{
+    font-size: 50px;
+    font-weight: 600;
+    margin: auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: white;
+    /*padding: 11px 0 14px 40px;*/
+    
+}
+.slider-desc2{
+    font-size: 25px;
+    line-height: 30px;
+   /* margin-left: 43px;*/
+   color: white;
+}
 .slider3{
     flex-basis: calc(100% - 630px);
     height: 484px;
     background-color: #eb7b61;
     margin: 0.5em 0 0.5em 0.5em;
-    font-family: 'Times New Roman', Times, serif;
-    font-stretch: ultra-expanded;
+    font-family: 'Times New Roman';
     color: #ffffff;
     text-align: center;
     
 }
 .slider3-title{
-    line-height: 34px;
-    font-size: 34px;
-    padding-top: 79px;
-   
+  
+    font-size: 45px;
+    margin: auto;
     
 }
 .slider3-desc1{
-    font-size: 19px;
-    height: 79px;
-    
-
+    font-size: 25px;
+    margin-top: 70px;   
 }
 .slider-buttom{
-    font-family: inherit;
+    font-family: 'Open Sans', sans-serif;
     display: block;  
-    
+    justify-content: center;
+  
 }
 .slider-buttom input[type="email"]{
     background-color: #eb7b61;
-    border: 1px solid #ffffff;
-   
+    border: 3px solid #ffffff;
     width: 282px;
-    height: 42px;
+    height: 34px;
+    margin-top: 22px;
+    margin-bottom: 6px;
+    font-size: 22px;
     align-items: center;
-    text-align: center;
-    
-   
+    text-align: center;  
 
+}
+.email-input::-webkit-input-placeholder,
+.name-input::-webkit-input-placeholder{
+    color: #ffffff;
 }
 .slider-buttom input[type="name"]{
     background-color: #66689c;
     border: 1px;
-   
     width: 282px;
-    height: 42px;
+    height: 40px;
     align-items: center;
     text-align: center;
+    font-size: 20px;
 
 }
 .slider3-desc2{
     height: 34px;
-    font-size: 13px;
-    padding-top: 35px;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 70px;
 
 }
-
-.slider4{
-    flex-basis: 260px;
-   
-    height: 421px;
-    background: url(img/slide3.jpg) no-repeat center;
-    margin: 0.5em 0.5em 0.5em 0;
-}
+.slider4,
 .slider5{
     flex-basis: 260px;
-    height: 421px;
-    background: url(img/slide4.jpg) no-repeat center;
-    margin: 0.5em;
+    justify-content: space-between;
+    align-items: center;
+    height: 420px;   
+}
+.slider4{
+    background: url(img/fotograd.png) no-repeat center;
+    margin: 0.6em 0.5em 0 0;
+}
+.slider-h44{
+    color: #ffc7b0;
+   /* padding: 35px 0 0 0;*/
+}
+.slider-title4{
+    line-height: 44px;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+   
+}
+.slider-submit2{
+    background-color: #ffe18e;
+    width: 93px;
+    height: 40px;
+    color: #555153;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 38px;
+}
+.slider5{
+    background: url(img/slide5grad.png) no-repeat center;
+    margin: 0.6em 0.5em 0 0.5em;
 }
 .slider6{
     flex-basis: calc(100% - 555px);
     height: 421px;
     background: url(img/foto1.png) no-repeat bottom right #1ab467;
-    margin: 0.5em 0 0.5em 0.5em;
+    margin: 0.6em 0 0 0.5em;
+}   
+.slider-title6{
+    line-height: 50px;
+    font-size: 36px;
+    font-weight: 600;
+    margin: auto;
+    margin-top: 5px;
+    color: #ffffff;
+  
+    
 }
+.slider-desc6{
+    color: white;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 30px;
+  
+    
+   
+    
+}   
 
 .footer-flex{
+    max-width: 100%;
+    height: 100px;
     display: flex;
     flex-wrap: wrap;
-    height: 34px;
-    padding-top: 46px;
+    flex-direction: row;
     justify-content: space-between;
-    color:  #898691;
     align-items: center;
+    color:  #898691;  
 }
 .footer-desc{
+    flex-basis: content;
     font-size: 14px;
+    align-self: center;
+    justify-content: flex-start;
+}
+
+.footer-facebook,
+.footer-bird{
+    
+    width: 24px;   
+    
+}
+
+
+@media screen and (max-width: 800px){
+    .wrapper{
+        max-width: 700px;
+        margin: 0 auto;
+    
+    }
+    .header-flex{
+        height: 100px;
+    }
+    .main-flex{
+        flex-wrap: wrap;
+        flex-direction: row;
+        
+    }
+    .slider1{
+        flex-basis: 100%;
+        order: 1;   
+    }
+    .slider2{
+        flex-basis: 100%;
+        order: 2;
+        margin: 0 auto;
+        margin-bottom: 0.7em;
+    }
+    .slider3{
+        order: 6;
+        flex-basis: 100%;
+        margin: 0 auto;
+        height: 300px;
+
+    }
+    .slider3-desc1{
+        margin: 0 auto;
+    }
+    .slider3-desc2{
+        margin: 0 auto;
+    }
+    .slider4{
+        order: 3;
+        flex-basis: 45%;
+        margin: 0 auto;
+        margin-bottom: 0.7em;
+        height: 300px;
+
+    }
+    .slider5{
+        order: 4;
+        flex-basis: 45%;
+        margin: 0 auto;
+        margin-bottom: 0.7em;
+        height: auto;
+    }
+    .slider6{
+        order: 5;
+        flex-basis: 100%;
+        margin: 0 auto;
+        margin-bottom: 0.7em;
+        height: 300px;
+    }
+    
+}
+
+@media screen and (max-width: 350px){
+    .wrapper{
+        max-width: 320px;
+        margin: 0 auto;
+    
+    }
+    .header-logo-title{
+        font-size: 30px;
+    }
+    .slider-title{
+        font-size: 50px;
+
+    }
+    .slider-desc{
+        font-size: 25px;
+    }
+    .slider-title4{
+        font-size: 25px;
+
+    }
+    .slider3-title{
+       font-size: 35px;
+    }
+    .slider3-desc1{
+        font-size: 18px;
+    }
+    .footer-flex{
+        height: auto;
+        margin-top: 5px;
+    }
+
 }
