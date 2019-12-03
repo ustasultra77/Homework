@@ -342,14 +342,18 @@
         order: 6;
         flex-basis: 100%;
         margin: 0 auto;
-        height: 300px;
+        height: auto;
 
     }
     .slider3-desc1{
         margin: 0 auto;
     }
+    .slider3-title{
+        margin-top: 20px;
+    }
     .slider3-desc2{
         margin: 0 auto;
+        margin-bottom: 20px;
     }
     .slider4{
         order: 3;
