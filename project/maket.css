@@ -24,7 +24,7 @@
 .main-slider{
     width: 100%;
     height: 802px;
-    background: linear-gradient( 0deg, rgba(8, 8, 8, 0.71) 16%, rgba(255,255,255, 0%) 100%, #ffffff),  url(img/town/town.png) no-repeat; 
+    background: linear-gradient( 0deg, rgba(8, 8, 8, 0.71) 16%, rgba(255,255,255, 0%) 100%, #ffffff),  url(img/town/town.png) no-repeat center; 
 }  
 .logo{
     width: 273px;
