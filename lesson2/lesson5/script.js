@@ -1,5 +1,5 @@
 'use scrict';
-/*
+
 function getCookie(name_date) {
     let matches = document.cookie.match(new RegExp(
       "(?:^|; )" + name_date.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
@@ -59,7 +59,8 @@ function dateDifference(){
   }
 
   dateDifference();
-*/
+
+
   // классы
 
   /* 
