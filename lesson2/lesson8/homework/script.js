@@ -1,7 +1,7 @@
 'use strict';
 
 
-let list_items=document.querySelectorAll('.list li'); 
+let list_items=document.querySelectorAll('.list li:nth-child(odd)'); 
 
 console.log(list_items); 
 
@@ -24,8 +24,10 @@ for (let elem of news_titles){
 
 
 let news_dates = document.getElementsByTagName('time');
-console.log(Array.from(news_dates));
+let arr=[];
+
 for (let elem of news_dates){
+    arr.push(elem.innerHTML);
     console.log( elem.innerHTML);
 }
 
