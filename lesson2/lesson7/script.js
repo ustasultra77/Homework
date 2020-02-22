@@ -15,7 +15,7 @@
     try{
         console.log('запустился код');
 
-        URLSearchParams;
+        gfhgfhg;
 
         console.log('конец кода');
     } catch(error){
